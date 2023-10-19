@@ -1,4 +1,6 @@
 <?php
+require 'processaEmail.php';
+
 if (!empty($_POST)) {
 
     $servername = "localhost";
@@ -28,10 +30,7 @@ if (!empty($_POST)) {
         $registro = mysqli_query($conn, $sql);
 
         if ($registro && mysqli_num_rows($registro) == 1) {
-
-
-
-            
+            sendEmail();
         } else {
             $message = "Não tem conta com esse email";
             $_SESSION['messageSenha'] = $message;
