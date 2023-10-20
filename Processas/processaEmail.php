@@ -13,10 +13,10 @@ function sendEmail()
         $mail->SMTPAuth = true;
         $mail->Username = 'gestiprodemail@gmail.com';
         $mail->Password = 'imqhmfggunjobmbx';
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('gestiprodemail@gmail.com', 'Mailer');
+        $mail->setFrom('gestiprodemail@gmail.com', 'phpmail1');
         # $mail->addAddress('josemanuelguedes@gmail.com', 'José Guedes');
         $mail->addAddress('josemanuelguedes@gmail.com'); 
         # $mail->addReplyTo('info@example.com', 'Information');
