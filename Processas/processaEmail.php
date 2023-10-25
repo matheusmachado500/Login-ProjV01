@@ -18,7 +18,7 @@ function sendEmail()
 
         $mail->setFrom('gestiprodemail@gmail.com', 'phpmail1');
         # $mail->addAddress('josemanuelguedes@gmail.com', 'José Guedes');
-        $mail->addAddress('josemanuelguedes@gmail.com'); 
+        $mail->addAddress('josemanuelguedes@gmailccc.com'); 
         # $mail->addReplyTo('info@example.com', 'Information');
         # $mail->addCC('cc@example.com');
         # $mail->addBCC('bcc@example.com');
